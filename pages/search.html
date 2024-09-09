@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Businesses</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="App Logo" class="logo">
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="category.html">Categories</a>
+            <a href="search.html" class="active">Search</a>
+           
+            <div id="auth-links">
+              <!-- Links for unauthenticated users -->
+              <a href="login.html" class="button">Login</a>
+              <a href="signup.html" class="button">Sign Up</a>
+            </div>
+            <div id="user-links" style="display: none;">
+              <!-- Links for authenticated users -->
+              <a href="add-business.html">Add Business</a>
+              <a href="business-details.html">Business Details</a>
+              <a href="update-profile.html">Profile</a>
+              <a href="logout.html" class="button">Logout</a>
+            </div>
+        </div>
+      </header>
+
+  <section class="search-page">
+    <div class="container">
+      <h1>Search Businesses</h1>
+      <form id="search-form">
+        <input type="text" id="search-input" name="search" placeholder="Enter business name or category..." required>
+        <button type="submit" class="button">Search</button>
+      </form>
+
+      <div id="search-results">
+        <!-- Search results will be displayed here -->
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/auth.js"></script>
+
+</body>
+</html>

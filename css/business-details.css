@@ -1,0 +1,94 @@
+/* business-details.css */
+
+/* Business Details Page Styles */
+.business-details {
+    padding-top: 100px;
+    min-height: 80vh;
+    background-color: #f5f5f5;
+  }
+  
+  .business-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .business-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .business-details p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .business-details strong {
+    color: #333;
+  }
+  
+  #reviews-list {
+    margin-top: 30px;
+  }
+  
+  #reviews-list .review {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #reviews-list .review h4 {
+    margin: 0 0 10px;
+    color: #007bff;
+  }
+  
+  #reviews-list .review p {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  #add-review-form {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #add-review-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #add-review-form textarea,
+  #add-review-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #add-review-form button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  #add-review-form button:hover {
+    background-color: #0056b3;
+  }
+  

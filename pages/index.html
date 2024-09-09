@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Information App</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="App Logo" class="logo">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="search.html">Search</a>
+        <div id="auth-links">
+          <!-- Links for unauthenticated users -->
+          <a href="login.html" class="button">Login</a>
+          <a href="signup.html" class="button">Sign Up</a>
+        </div>
+        <div id="user-links" style="display: none;">
+          <!-- Links for authenticated users -->
+          <a href="add-business.html">Add Business</a> <!-- New Link -->
+          <a href="business-details.html">Business Details</a> <!-- New Link -->
+          <a href="update-profile.html">Profile</a>
+          <a href="logout.html" class="button">Logout</a>
+        </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Find the Best Businesses in Your Area</h1>
+      <p>Discover top-rated businesses in food, healthcare, education, and more.</p>
+      <a href="search.html" class="hero-button">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="container">
+      <h2>Popular Categories</h2>
+      <div class="category-grid">
+        <div class="category-card" onclick="location.href='category.html?category=food';">
+          <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="Food">
+          <h3>Food</h3>
+        </div>
+        <div class="category-card" onclick="location.href='category.html?category=healthcare';">
+          <img src="https://cdn-icons-png.flaticon.com/512/621/621894.png" alt="Healthcare">
+          <h3>Healthcare</h3>
+        </div>
+        <div class="category-card" onclick="location.href='category.html?category=education';">
+          <img src="https://cdn-icons-png.flaticon.com/512/2393/2393478.png" alt="Education">
+          <h3>Education</h3>
+        </div>
+        <div class="category-card" onclick="location.href='category.html?category=hotels';">
+          <img src="https://cdn-icons-png.flaticon.com/512/3178/3178298.png" alt="Hotels">
+          <h3>Hotels</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2024 Business Information App. All Rights Reserved.</p>
+    </div>
+  </footer> -->
+  <script src="../js/auth.js"></script>
+  
+</body>
+</html>

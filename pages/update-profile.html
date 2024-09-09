@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="App Logo" class="logo">
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="category.html">Categories</a>
+                <a href="search.html">Search</a>
+                
+                <div id="auth-links">
+                    <a href="login.html" class="button">Login</a>
+                    <a href="signup.html" class="button">Sign Up</a>
+                </div>
+                <div id="user-links" style="display: none;">
+                    <a href="add-business.html">Add Business</a>
+              <a href="business-details.html">Business Details</a>
+              <a href="update-profile.html">Profile</a>
+              <a href="logout.html" class="button">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="update-profile">
+        <div class="container">
+            <h1>Update Your Profile</h1>
+            <form id="update-profile-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button type="submit" class="button">Update Profile</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/auth.js"></script>
+
+</body>
+</html>

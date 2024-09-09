@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Details</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/business-details.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="App Logo" class="logo">
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="category.html">Categories</a>
+            <a href="search.html">Search</a>
+            <div id="auth-links">
+              <!-- Links for unauthenticated users -->
+              <a href="login.html" class="button">Login</a>
+              <a href="signup.html" class="button">Sign Up</a>
+            </div>
+            <div id="user-links" style="display: none;">
+                <a href="add-business.html">Add Business</a> <!-- New Link -->
+  <a href="business-details.html">Business Details</a> <!-- New Link -->
+              <!-- Links for authenticated users -->
+              <a href="update-profile.html">Profile</a>
+              <a href="logout.html" class="button">Logout</a>
+            </div>
+        </div>
+      </header>
+
+  <section class="business-details">
+    <div class="container">
+      <h1 id="business-name"></h1>
+      <img id="business-image" src="" alt="Business Image" class="business-image">
+      <p><strong>Category:</strong> <span id="business-category"></span></p>
+      
+        <p><strong>Location:</strong> <span id="business-location"></span></p>
+        <p><strong>Phone Number:</strong> <span id="business-phone"></span></p>
+        <p><strong>Description:</strong> <span id="business-description"></span></p>
+  
+        <h2>Reviews</h2>
+        <div id="reviews-list">
+          <!-- Reviews will be injected here -->
+        </div>
+  
+        <h3>Add a Review</h3>
+        <form id="add-review-form">
+          <label for="review-text">Your Review:</label>
+          <textarea id="review-text" name="review-text" rows="4" required></textarea>
+  
+          <label for="review-rating">Rating:</label>
+          <select id="review-rating" name="review-rating" required>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+          </select>
+  
+          <button type="submit" class="button">Submit Review</button>
+        </form>
+      </div>
+    </section>
+  
+    <script src="../js/main.js"></script>
+    <script src="../js/business-details.js"></script>
+  <script src="../js/auth.js"></script>
+
+  </body>
+  </html>
+  

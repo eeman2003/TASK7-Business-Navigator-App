@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Business</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/add-business.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="App Logo" class="logo">
+          <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="category.html">Categories</a>
+            <a href="search.html">Search</a>
+            <div id="auth-links">
+              <!-- Links for unauthenticated users -->
+              <a href="login.html" class="button">Login</a>
+              <a href="signup.html" class="button">Sign Up</a>
+            </div>
+            <div id="user-links" style="display: none;">
+                
+              <!-- Links for authenticated users -->
+              <a href="add-business.html">Add Business</a> <!-- New Link -->
+              <a href="business-details.html">Business Details</a> <!-- New Link -->
+              <a href="update-profile.html">Profile</a>
+              <a href="logout.html" class="button">Logout</a>
+            </div>
+        </div>
+      </header>
+
+  <section class="add-business">
+    <div class="container">
+      <h1>Add a New Business</h1>
+      <form id="add-business-form">
+        <label for="business-name">Business Name:</label>
+        <input type="text" id="business-name" name="business-name" required>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="food">Food & Restaurants</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="education">Education</option>
+          <option value="hotels">Hotels</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="image-url">Image URL:</label>
+        <input type="text" id="image-url" name="image-url" placeholder="Optional">
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/add-business.js"></script>
+  <script src="../js/auth.js"></script>
+
+</body>
+</html>
